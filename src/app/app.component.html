@@ -1,0 +1,57 @@
+<section class="msger">
+  <header class="msger-header">
+    <div class="msger-header-title">
+      <i class="fas fa-comment-alt"></i>Demo Hỏi Đáp Tự Động Lĩnh Vực Du Lịch
+    </div>
+    <div class="msger-header-options">
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
+
+  <main class="msger-chat">
+    <div class="msg left-msg">
+      <div
+        class="msg-img"
+        style="background-image: url(https://cdn-icons-png.flaticon.com/512/9288/9288156.png)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">[BOT]</div>
+          <div class="msg-info-time">{{ timeNow | date: 'HH:mm' }}</div>
+        </div>
+
+        <div class="msg-text">
+          Xin chào {{userLogin}} ! Mời bạn đặt câu hỏi !
+          😄
+        </div>
+      </div>
+    </div>
+
+    <div class="msg right-msg">
+      <div
+        class="msg-img"
+        style="background-image: url(https://cdn-icons-png.flaticon.com/512/9292/9292618.png)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">User</div>
+          <div class="msg-info-time">{{ timeNow | date: 'HH:mm' }}</div>
+        </div>
+
+        <div class="msg-text">You can change your name in JS section!</div>
+      </div>
+    </div>
+  </main>
+
+  <form class="msger-inputarea">
+    <input
+      type="text"
+      class="msger-input"
+      placeholder="Enter your message..."
+      onchange=""
+    />
+    <button type="submit" class="msger-send-btn">Send</button>
+  </form>
+</section>
